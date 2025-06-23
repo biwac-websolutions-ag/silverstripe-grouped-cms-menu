@@ -171,7 +171,7 @@ class GroupedCmsMenu extends Extension
             return $class::create()->config()->get('menu_icon_class');
         }
 
-        return 'font-icon-' . (!empty($groupSettings[$group]['icon']) ? $groupSettings[$group]['icon'] : '');
+        return (!empty($groupSettings[$group]['icon']) ? $groupSettings[$group]['icon'] : '');
     }
 
     /**
